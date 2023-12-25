@@ -17,6 +17,10 @@ a {
   color: #000;
 }
 
+img {
+  width: 100%;
+}
+
 /* --------------------------------- LAYOUT --------------------------------- */
 body {
   background: linear-gradient(90deg, rgb(238, 238, 238) 10%, rgb(238, 238, 238) 100%, rgb(238, 238, 238) 100%);
@@ -34,9 +38,70 @@ main > div {
   grid-template-columns: auto;
 }
 
+main > div:first-child {
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
 main > div > #intro {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+#intro {
+  min-height: 100vh;
+}
+
+/* ---------------------------------- INTRO --------------------------------- */
+#intro-left {
+  background-color: white;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+#intro-left p {
+  padding-top: 10px;
+  font-size: 1.6rem;
+}
+#intro-left a {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+#intro-left a:hover {
+  background: #000;
+  color: #fff;
+}
+
+#intro-right {
+  background: url(../../../assets/img/img1.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* -------------------------------- OUR WORK -------------------------------- */
+#our-work {
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #333333;
+  color: white;
+  padding: 15px 0;
+}
+
+/* ---------------------------------- PHOTO --------------------------------- */
+.photo {
+  text-align: center;
+}
+.photo h3 {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.photo p {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
 }
 
 /* --------------------------------- FOOTER --------------------------------- */
