@@ -1,0 +1,29 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------------------ HTML ELEMENT ------------------------------ */
+html {
+  font-size: 62.5%;
+}
+
+/* --------------------------------- LAYOUT --------------------------------- */
+main {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+main > div {
+display: grid;
+grid-template-columns: auto;
+}
+
+main > div > #intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
